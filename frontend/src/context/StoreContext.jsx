@@ -1,9 +1,3 @@
-import React from 'react'
+import { createContext } from "react";
 
-const StoreContext = () => {
-  return (
-    <div>StoreContext</div>
-  )
-}
-
-export default StoreContext
+export const StoreContext = createContext 
