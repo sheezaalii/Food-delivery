@@ -1,12 +1,14 @@
 .header{
     height: 34vw;
     margin: 30px auto;
-    background: url('/4.png') no-repeat,
-    linear-gradient(rgba(0, 0, 0, 0.984), rgba(0, 0, 0, 0.97));
-    background-size: contain, auto;
+    background: url('/5.png') no-repeat;
+    /* linear-gradient(rgba(0, 0, 0, 0.034), rgba(0, 0, 0, 0.97)); */
+    background-size: contain;
     background-position: center;
     position: relative;
-    border-radius: 8px;
+    /* border-radius: 20px;
+    overflow: hidden; Ensures that the child elements stay within the rounded corners */
+
 }
 
 .header-contents{
@@ -42,4 +44,27 @@
     background-color: white;
     font-size: max(1vw, 13px);
     border-radius: 50px;
+}
+
+@media (max-width:1050px){
+    .header{
+        height: 38vw;
+    }
+    .header-contents{
+        max-width: 45%;
+    }
+}
+
+@media (max-width:750px){
+ 
+    .header-contents{
+        max-width: 55%;
+    }
+
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
 }
